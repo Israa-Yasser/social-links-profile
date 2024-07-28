@@ -1,110 +1,72 @@
 /* Default style for large screens */
-body{
-    background-color: black;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    text-align: center;
+body {
+  background-color: black;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
 }
 
 .profile {
-    width: 450px;
-    height: 900px;
-    border: 2px solid rgba(0, 0, 0, 0.267);
-    background-color: rgba(39, 36, 36, 0.616);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px auto;
+  width: 450px;
+  border: 2px solid rgba(0, 0, 0, 0.267);
+  border-radius: 10px;
+  background-color: rgba(39, 36, 36, 0.616);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding: 2rem;
 }
 
 img {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
-.London{
-    color: rgba(255, 255, 0, 0.473);
+.london {
+  color: rgba(255, 255, 0, 0.473);
 }
 
-.div1{
-    width: 270px;
-    height: 5px;
-    background-color:rgba(83, 48, 48, 0.616) ;
-    border-radius: 10px;
-    padding: 30px;
-    margin-top: 20px;
+.social-links {
+  width: 100%;
 }
 
-.div1:hover{
-    background-color: rgba(255, 255, 0, 0.473);
-    cursor: pointer;
+.social-item {
+  background-color: rgba(83, 48, 48, 0.616);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 20px;
+  margin-inline: auto;
 }
 
+.social-item:hover {
+  background-color: rgba(255, 255, 0, 0.473);
+  cursor: pointer;
+}
 
+@media (max-width: 512px) {
+  .profile {
+    width: 90%;
+    margin-inline: auto;
+    padding: 1rem;
+  }
+}
 
-/* For screens smaller than 768px */
-@media (max-width: 768px) {
-
-    body{
-        background-color: black;
-        color: #fff;
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-    
-    .profile {
-        width: 450px;
-        height: 900px;
-        border: 2px solid rgba(0, 0, 0, 0.267);
-        background-color: rgba(39, 36, 36, 0.616);
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 50px auto;
-    }
-    
-    img {
-        width: 200px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-    }
-    
-    h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-    
-    p {
-        margin-bottom: 20px;
-    }
-    
-    .London{
-        color: rgba(255, 255, 0, 0.473);
-    }
-    
-    .div1{
-        width: 270px;
-        height: 5px;
-        background-color:rgba(83, 48, 48, 0.616) ;
-        border-radius: 10px;
-        padding: 30px;
-        margin-top: 20px;
-
-    }
-    .div1:hover{
-        background-color: rgba(255, 255, 0, 0.473);
-        cursor: pointer;
-    }
+@media (max-width: 450px) {
+  .profile {
+    width: 90%;
+    margin-inline: auto;
+    padding: 1rem;
+  }
 }
